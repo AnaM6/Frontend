@@ -167,7 +167,7 @@ function pintarRespuestaMessage(response){
     let myTable="<table>";
     for(i=0;i<response.length; i++){
         myTable+="<tr>";
-        myTable+="<td>"+response[i].messagetext+"</td>";
+        myTable+="<td>"+response[i].messageText+"</td>";
         myTable+="<tr>";
     }
     myTable +="</table>";
@@ -176,7 +176,7 @@ function pintarRespuestaMessage(response){
 
 function guardarInformacionMessage(){
     let var4={
-        messagetext:$("#messagetext").val()
+        messagetext:$("#messageText").val()
     };    
     $.ajax({
         url:"http://129.151.122.234:8080/api/Message/save",
@@ -213,8 +213,8 @@ function pintarRespuestaReservation(response){
     let myTable="<table>";
     for(i=0;i<response.length; i++){
         myTable+="<tr>";
-        myTable+="<td>"+response[i].startdate+"</td>";
-        myTable+="<td>"+response[i].devolutiondate+"</td>";
+        myTable+="<td>"+response[i].startDate+"</td>";
+        myTable+="<td>"+response[i].devolutionDate+"</td>";
         myTable+="<td>"+response[i].status+"</td>";
         myTable+="<tr>";
     }
@@ -224,9 +224,9 @@ function pintarRespuestaReservation(response){
 
 function guardarInformacionReservation(){
     let var5={
-        startdate:$("#startdate").val(),
-        devolutiondate:$("#devolutiondate").val(),
-        status:$("#Rstatus").val(),
+        startDate:$("#startDate").val(),
+        devolutionDate:$("#devolutionDate").val(),
+        status:$("#status").val(),
     };    
     $.ajax({
         url:"http://129.151.122.234:8080/api/Reservation/save",
