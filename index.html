@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <title>RentCar</title> 
+</head>    
+<body>
+    <h3>Gamas</h3>
+    <div id="resultado1"></div>
+    <button onclick="traerInformacionGamas()">Consultar Gama</button>
+    <div>
+        <input type="text" id="Gname" placeholder="name">
+        <input type="text" id="Gdescription" placeholder="description">
+        
+    </div>
+    <button onclick="guardarInformacionGama()">Agregar Elemento</button>
+
+    <h3>Cars</h3>
+    <div id="resultado2"></div> 
+    <button onclick="traerInformacionCars()">Consultar Cars</button>
+    <div>
+        <input type="text" id="name" placeholder="name">
+        <input type="text" id="brand" placeholder="brand">
+        <input type="number" id="year" placeholder="year">
+        <input type="text" id="description" placeholder="description">
+    </div>
+    <button onclick="guardarInformacionCar()">Agregar Car</button>
+
+    <h3>Clients</h3>
+    <div id="resultado3"></div> 
+    <button onclick="traerInformacionClients()">Consultar Clients</button>
+    <div>
+        <input type="text" id="Cemail" placeholder="email">
+        <input type="text" id="Cpassword" placeholder="password">
+        <input type="text" id="Cname" placeholder="name">
+        <input type="number" id="Cage" placeholder="age">
+    </div>
+    <button onclick="guardarInformacionClient()">Agregar Client</button>
+
+    <h3>Messages</h3>
+    <div id="resultado4"></div> 
+    <button onclick="traerInformacionMessages()">Consultar Messages</button>
+    <div>
+        <input type="text" id="messagetext" placeholder="messagetext">
+    </div>
+    <button onclick="guardarInformacionMessage()">Agregar Message</button>
+
+    <h3>Reservation</h3>
+    <div id="resultado5"></div> 
+    <button onclick="traerInformacionReservations()">Consultar Reservations</button>
+    <div>
+        <input type="date" id="stardate" placeholder="startdate">
+        <input type="date" id="devolutiondate" placeholder="devolutiondate">
+        <input type="text" id="status" placeholder="status">
+    </div>
+    <button onclick="guardarInformacionReservation()">Agregar Reservation</button>
+</body>
+</html>
