@@ -176,7 +176,7 @@ function pintarRespuestaMessage(response){
 
 function guardarInformacionMessage(){
     let var4={
-        messagetext:$("#messageText").val()
+        messageText:$("#messageText").val()
     };    
     $.ajax({
         url:"http://129.151.122.234:8080/api/Message/save",
@@ -223,6 +223,7 @@ function pintarRespuestaReservation(response){
 }
 
 function guardarInformacionReservation(){
+    console.log($("#startDate").val());
     let var5={
         startDate:$("#startDate").val(),
         devolutionDate:$("#devolutionDate").val(),
