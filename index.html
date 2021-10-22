@@ -5,7 +5,13 @@
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
-    <title>RentCar</title> 
+    <title>RentCar</title>
+    <style>
+        table,th,td{
+            border: 1px solid white;
+            border-collapse: collapse;
+            background-color: #96D4D4;}
+    </style>
 </head>    
 <body>
     <h1>RentCar</h1>
@@ -21,6 +27,7 @@
 
     <h3>Cars</h3>
     <div id="resultado2"></div> 
+
     <button onclick="traerInformacionCars()">Consultar Cars</button>
     <div>
         <input type="text" id="name" placeholder="name">
@@ -29,7 +36,7 @@
         <input type="text" id="description" placeholder="description">
     </div>
     <button onclick="guardarInformacionCar()">Agregar Car</button>
-
+   
     <h3>Clients</h3>
     <div id="resultado3"></div> 
     <button onclick="traerInformacionClients()">Consultar Clients</button>
